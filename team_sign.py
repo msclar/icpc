@@ -61,3 +61,6 @@ def main():
         team_number = team_number + 1
     
 main()
+
+# after creating jpgs, run the following command to create printable PDF
+# montage *.jpg -tile 1x3 -geometry 1000 assembly.pdf

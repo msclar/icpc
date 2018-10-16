@@ -1,0 +1,27 @@
+Input is read from the 'teams' file. Its format is:
+
+TEAM_NAME;PHOTO_FILE_NAME.
+
+PHOTO_FILE_NAME is relative to the 'input_photos' directory. For example:
+
+Best Team Ever;IMG_20170930_110525.jpg
+Good luck!;IMG_20170930_110648.jpg
+double cheeseburguer;;IMG_20170930_110649.jpg
+
+Note that team names can contain ;.
+
+This assumes the following files exist:
+
+input_photos/IMG_20170930_110525.jpg
+input_photos/IMG_20170930_110648.jpg
+input_photos/IMG_20170930_110649.jpg
+
+Now, simply run:
+
+$ python3 gen_photos.py
+
+The output should look like this:
+
+Saved output_photos/Best Team Ever.jpg
+Saved output_photos/Good luck!.jpg
+Saved output_photos/double cheeseburguer;.jpg
